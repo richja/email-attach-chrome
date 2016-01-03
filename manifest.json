@@ -1,0 +1,20 @@
+{
+	"name": "Email.cz",
+	"short_name": "Email Seznam.cz - příloha",
+	"author": "Jan Richter",
+	"version": "0.1",
+	"description": "Už žádné zapomenuté přílohy v e-mailech. Upozorní na chybějící přílohu ve webovém poštovním klientovi od seznam.cz",
+	"manifest_version": 2,
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+	"content_scripts": [
+	{
+		"js": ["content.js"],
+		"matches": ["https://lab.email.seznam.cz/*"],
+		"css": ["cstyle.css"]
+	}
+	]
+}
